@@ -66,5 +66,5 @@ for ind, galaxy in enumerate(expanded):
         ind2 += ind+1
         total_path += abs(galaxy2[0]-galaxy[0]) + abs(galaxy2[1] - galaxy[1])
     
-time_p2 = time.time() - time_p1
-print("The solution to Part 1 is {} which took {} seconds to run".format(total_path, time_p2))
+time_p2 = time.time() - start_time
+print("The solution to Part 2 is {} which took {} seconds to run".format(total_path, time_p2))
