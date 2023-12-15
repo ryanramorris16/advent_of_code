@@ -47,6 +47,8 @@ def expand(rows, cols, galaxies, expansion_rate):
 
     return new_galaxies   
 
+time_s = time.time() - start_time
+
 expanded = expand(empty_row, empty_col, galaxies, 2)
 
 total_path = 0
@@ -55,7 +57,7 @@ for ind, galaxy in enumerate(expanded):
         ind2 += ind+1
         total_path += abs(galaxy2[0]-galaxy[0]) + abs(galaxy2[1] - galaxy[1])
     
-time_p1 = time.time() - start_time
+time_p1 = time.time() - start_time - time_s
 print("The solution to Part 1 is {} which took {} seconds to run".format(total_path, time_p1))
 
 #Part 2
@@ -66,5 +68,5 @@ for ind, galaxy in enumerate(expanded):
         ind2 += ind+1
         total_path += abs(galaxy2[0]-galaxy[0]) + abs(galaxy2[1] - galaxy[1])
     
-time_p2 = time.time() - start_time
+time_p2 = time.time() - start_time - time_p1
 print("The solution to Part 2 is {} which took {} seconds to run".format(total_path, time_p2))
