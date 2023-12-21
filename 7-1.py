@@ -6,7 +6,7 @@ __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file
 
 inputs = []
 
-with open(os.path.join(__location__, r"input-7-1.txt"),newline='') as csvfile:
+with open(os.path.join(__location__, r"2023 Inputs/input-7-1.txt"),newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter='\n')
     for row in reader:
         inputs.append(row[0])

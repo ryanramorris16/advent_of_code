@@ -10,7 +10,7 @@ location = []
 left_dest = []
 right_dest = []
 
-with open(os.path.join(__location__, r"input-8-1.txt"),newline='') as csvfile:
+with open(os.path.join(__location__, r"2023 Inputs/input-8-1.txt"),newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter='\n')
     for ind, row in enumerate(reader):
         if ind == 0:

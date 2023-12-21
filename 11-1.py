@@ -8,7 +8,7 @@ start_time = time.time()
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
 inputs = []
-with open(os.path.join(__location__, "input-11-1.txt"),newline='') as csvfile:
+with open(os.path.join(__location__, "2023 Inputs/input-11-1.txt"),newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter='\n')
     for row in reader:
         inputs.append(row)

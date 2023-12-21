@@ -14,7 +14,7 @@ hum2loc = []
 all_map = [seeds,s2soil,soil2fert,fert2wat,wat2li,li2temp,temp2hum,hum2loc]
 
 counter = 0
-with open(os.path.join(__location__, r"input-5-1.txt"),newline='') as csvfile:
+with open(os.path.join(__location__, r"2023 Inputs/input-5-1.txt"),newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter='\n')
     for ind, row in enumerate(reader):        
         if row:

@@ -10,7 +10,7 @@ __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file
 
 springs = []
 groups = []
-with open(os.path.join(__location__, "input-12-1.txt"),newline='') as csvfile:
+with open(os.path.join(__location__, "2023 Inputs/input-12-1.txt"),newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter='\n')
     for row in reader:
         springs.append(row[0].split(' ')[0])
