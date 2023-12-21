@@ -3,7 +3,6 @@ import time
 import csv
 import os
 from functools import lru_cache
-from fontTools.mtiLib import parseMarkToSomething
 
 start_time = time.time()
 
